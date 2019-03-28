@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLDSVDataSet" targetNamespace="http://tempuri.org/QLDSVDataSet.xsd" xmlns:mstns="http://tempuri.org/QLDSVDataSet.xsd" xmlns="http://tempuri.org/QLDSVDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLDSV_server00" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLDSV_server00 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLDSV_1.Properties.Settings.GlobalReference.Default.QLDSV_server00" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_DSPMTableAdapter" GeneratorDataComponentClassName="v_DSPMTableAdapter" Name="v_DSPM" UserDataComponentName="v_DSPMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLDSV_server00 (Settings)" DbObjectName="QLDSV.dbo.v_DSPM" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TENCN, TENSERVER FROM dbo.v_DSPM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TENCN" DataSetColumn="TENCN" />
+              <Mapping SourceColumn="TENSERVER" DataSetColumn="TENSERVER" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLDSVDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLDSVDataSet" msprop:Generator_UserDSName="QLDSVDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_DSPM" msprop:Generator_TableClassName="v_DSPMDataTable" msprop:Generator_TableVarName="tablev_DSPM" msprop:Generator_RowChangedName="v_DSPMRowChanged" msprop:Generator_TablePropName="v_DSPM" msprop:Generator_RowDeletingName="v_DSPMRowDeleting" msprop:Generator_RowChangingName="v_DSPMRowChanging" msprop:Generator_RowEvHandlerName="v_DSPMRowChangeEventHandler" msprop:Generator_RowDeletedName="v_DSPMRowDeleted" msprop:Generator_RowClassName="v_DSPMRow" msprop:Generator_UserTableName="v_DSPM" msprop:Generator_RowEvArgName="v_DSPMRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TENCN" msprop:Generator_ColumnVarNameInTable="columnTENCN" msprop:Generator_ColumnPropNameInRow="TENCN" msprop:Generator_ColumnPropNameInTable="TENCNColumn" msprop:Generator_UserColumnName="TENCN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENSERVER" msprop:Generator_ColumnVarNameInTable="columnTENSERVER" msprop:Generator_ColumnPropNameInRow="TENSERVER" msprop:Generator_ColumnPropNameInTable="TENSERVERColumn" msprop:Generator_UserColumnName="TENSERVER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="128" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
