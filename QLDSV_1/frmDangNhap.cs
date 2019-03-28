@@ -47,13 +47,13 @@ namespace QLDSV_1
             }
             if (txtLogin.Text.Trim() == "" && txtPass.Text.Trim() != "")
             {
-                MessageBox.Show("Bạn chưa nhập username", "Lỗi đăng nhập!", MessageBoxButtons.OK);
+                MessageBox.Show("Bạn chưa nhập username!", "Lỗi đăng nhập!", MessageBoxButtons.OK);
                 txtLogin.Focus();
                 return;
             }
             if (txtLogin.Text.Trim() != "" && txtPass.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập password", "Lỗi đăng nhập!", MessageBoxButtons.OK);
+                MessageBox.Show("Bạn chưa nhập password!", "Lỗi đăng nhập!", MessageBoxButtons.OK);
                 txtPass.Focus();
                 return;
             }
